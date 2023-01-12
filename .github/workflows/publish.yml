@@ -20,7 +20,7 @@ env:
 
 defaults:
   run:
-    shell: pwsh
+    shell: sh
 
 jobs:
   create_nuget:
