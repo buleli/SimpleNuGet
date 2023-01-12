@@ -11,10 +11,12 @@
     <NoWarn>$(NoWarn);CS1591</NoWarn>
      <Authors>li liang</Authors>
     <Description>A long description to explain the package</Description>
-
+     <PackageProjectUrl>https://www.meziantou.net</PackageProjectUrl>
     <!-- A list of tags to help the search engine to understand the content of the package -->
     <PackageTags>sample, library</PackageTags>
-      <PackageIcon>icon.png</PackageIcon>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <PackageIcon>icon.png</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,13 +30,8 @@
     </PackageReference>
   </ItemGroup>
    <ItemGroup>
-    <!--
-        Add an icon.png next to the csproj:
-        - Supported format: png, jpg
-        - Recommended dimensions: 128x128
-        - Maximum size: 1MB
-    -->
-    <None Include="icon.png" Pack="true" PackagePath=""/>
+     <None Include="icon.png" Pack="true" PackagePath="" />
+    <None Include="README.md" Pack="true" PackagePath="" />
   </ItemGroup>
 
 </Project>
