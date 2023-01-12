@@ -20,7 +20,7 @@ env:
 
 defaults:
   run:
-    shell: pwsh
+    shell: bash
 
 jobs:
   create_nuget:
@@ -86,5 +86,5 @@ jobs:
     - name: Publish NuGet package
       run: |
         foreach($file in (Get-ChildItem "${{ env.NuGetDirectory }}" -Recurse -Include *.nupkg)) {
-            dotnet nuget push $file --api-key oy2pzoptuqwjslczwdpag2jyl5uuxade5ik3junr3bz7py --source https://api.nuget.org/v3/index.json
+            dotnet nuget push $file --api-key "${{ secrets.NUGET_APIKEY }}"  --source https://api.nuget.org/v3/index.json
         }
