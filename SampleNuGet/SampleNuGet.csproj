@@ -26,13 +26,15 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
-     <!--
+  </ItemGroup>
+   <ItemGroup>
+    <!--
         Add an icon.png next to the csproj:
         - Supported format: png, jpg
         - Recommended dimensions: 128x128
         - Maximum size: 1MB
     -->
-    <None Include="icon.jpg" Pack="true" PackagePath=""/>
+    <None Include="icon.png" Pack="true" PackagePath=""/>
   </ItemGroup>
 
 </Project>
